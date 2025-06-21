@@ -1,0 +1,43 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #FDFBF7;
+    color: #3D352E;
+}
+.nav-link {
+    transition: all 0.3s ease;
+    border-right: 4px solid transparent;
+}
+.nav-link.active {
+    background-color: #ECE7DF;
+    border-right-color: #D4A373;
+    color: #3D352E;
+    font-weight: 700;
+}
+.nav-link:hover {
+    background-color: #F5F1EA;
+}
+.content-section {
+    display: none;
+}
+.content-section.active {
+    display: block;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    max-height: 400px;
+}
+@media (max-width: 768px) {
+    .chart-container {
+        height: 300px;
+    }
+}
